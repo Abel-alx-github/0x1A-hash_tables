@@ -10,6 +10,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (size == 0)
 		return (NULL);
+
 	ht = calloc(1, sizeof(hash_table_t));
 	if (ht == NULL)
 		return (NULL);

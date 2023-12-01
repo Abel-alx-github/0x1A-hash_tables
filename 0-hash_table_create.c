@@ -3,7 +3,6 @@
 *hash_table_create - function that create new hash table
 *@size: size of hash table's items
 *Return: address of new table
-*
 */
 hash_table_t *hash_table_create(unsigned long int size)
 {
@@ -19,11 +18,9 @@ hash_table_t *hash_table_create(unsigned long int size)
 	{
 		return (NULL);
 	}
-	i = 0;
-	while (i < size)
+	for (i = 0; i < size; i++)
 	{
 		ht->array[i] = NULL;
-		i++;
 	}
 	return (ht);
 }
